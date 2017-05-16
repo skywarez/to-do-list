@@ -1,4 +1,5 @@
-function TodoCtrl($scope) {
+angular.module('myApp', [])
+.controller('TodoCtrl', function($scope) {
     $scope.todos = [];
     $scope.markAll = false;
 
@@ -50,5 +51,4 @@ function TodoCtrl($scope) {
         });
     };
 
-}
-
+});
